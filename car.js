@@ -18,8 +18,8 @@ function start() {
 
     // audio1.setAttribute("src", "sound1.mp3")
     audio.play()
-    // audio.loop = true
-    audio1.play()
+    audio.loop = true
+    // audio1.play()
 
 }
 

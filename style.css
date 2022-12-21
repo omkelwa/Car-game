@@ -130,4 +130,8 @@ body{
        position: absolute;
        top:58vh; 
     }
+    .car-start .car .wheel {
+        position: absolute;
+        top:0vh;
+    }
 }
