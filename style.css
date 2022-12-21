@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.car-stop .sky{
+    background-image: url(./images/sky.jpg);
+    height:100vh;
+    background-size:cover;
+}
+.car-stop .track img{
+    position: absolute;
+    top:70vh;
+    /* width:100vw; */
+}
+.car-stop .track img{
+    width:100vw;
+    height:30vh;
+}
+.car-stop .car {
+    position: relative;
+    top:-40vh;
+}
+.car-stop .car .wheel1 img {
+    position:absolute;
+    top: 12vh;
+    left:32px;
+    width:60px;
+}
+
+.car-stop .car .wheel2 img {
+    position:absolute;
+    top: 12vh;
+    left:245px;
+    width:60px;
+}
+.start{
+    position: absolute;
+    top:20vh;
+    left:50px;
+    padding:10px 25px;
+    background-color: green;
+    border:none;
+    position:fixed;
+    border-radius:20px;
+    z-index: 1000;
+}
+
+.stop{
+    position: absolute;
+    top:20vh;
+    left:80vw;
+    padding:10px 25px;
+    background-color: red;
+    border:none;
+    position: fixed;
+    z-index: 1000;
+    border-radius:20px;
+}
+.car-start{
+    display:none;
+}
+.car-start .sky{
+    height:100vh;
+    width:500vw;
+    background-image: url(./images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    animation: skymove  linear 4s infinite;
+}
+
+.car-start .track img{
+    height:30vh;
+    width:600vw;   
+    position:absolute;
+    top:70vh;
+    animation: trackrotation  linear 4s infinite;
+}
+
+.car-start .car img{
+    position: absolute;
+    top:55vh;
+}
+.car-start .car .wheel1 img{
+    width:60px;
+    position:absolute;
+    top:440px;
+    left:32px;
+    animation: wheelrotation linear  .6s infinite;
+}
+
+.car-start .car .wheel2 img{
+    width:60px;
+    position:absolute;
+    top:440px;
+    left:245px;
+    animation: wheelrotation linear .6s infinite;
+}
+
+
+@keyframes wheelrotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes trackrotation{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+
+@keyframes skymove{
+    100%{
+        transform: translateX(-200vw);
+    }
+}
+
+
+@media(max-width:768px){
+    .car-start .car img{
+       position: absolute;
+       top:58vh; 
+    }
+}
