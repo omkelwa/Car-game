@@ -61,6 +61,7 @@ body{
     border-radius:20px;
 }
 .car-start{
+    height:100vh;
     display:none;
 }
 .car-start .sky{
