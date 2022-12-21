@@ -122,6 +122,9 @@ body{
 
 
 @media(max-width:768px){
+    body{
+        overflow: hidden;
+    }
     .car-start .car img{
        position: absolute;
        top:58vh; 
